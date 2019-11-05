@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Проект</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+	<div class="main">
+	<div class="reg" id="reg">
+		<button @click="close()">X</button>
+		<span class="reg-text">Вход{{login}} {{password}}</span>
+		<div class="login"><input type="text" id="login" v-model="a"></div>
+		<div class="password"><input type="password" id="password" v-model="b"></div>	
+		<div class="enter"><input type="submit" value="Войти" @click="registr"></div>	
+	</div>
+	<header>
+		<div class="header-text">
+			<span class="left">ТСЖ Чебоксары</span>
+			<label for="show" required><span class="right"><input type="button" onclick="show()" id="show">Регистрация</button></span></label>
+		</div>
+	</header>
+		<div class="new">
+			<h1>Заголовок </h1>
+			Как сверстать такую шапку лендинга, красиво без костылей? codepen.io/michael-e/pen/LkwvWE
+
+Максимальная ширина шапки (.cover) – 1200px, минимальная – 320px.
+По краям отступы в 5%.
+
+Если у блоков ширина 400px то они слишком рано складывается (для планшета).
+Если меньше, то на десктопе третий блок залезает в первую строку.
+
+Желательно чтобы третий бокс (форма) на планшете сжимался больше чем второй (заголовок).
+
+Понятно что можно все боксы обернуть div-ом по две штуки, но хочется элегантней.
+
+
+
+.cover {
+  padding: 0px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  flex: 1 0 340px;
+  max-width: 500px;
+}
+			
+		</div>
+
+
+		
+
+
+	<footer>
+		<div class="mark">Created by Polytechteam @2019-2020</div>
+	</footer>
+
+	</div>
+<script src="vue.js"></script>
+</body>
+</html>
