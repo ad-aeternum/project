@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
+
 
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #011627;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Comfortaa', cursive;
 	color: white;
 }
 
@@ -22,7 +24,7 @@ a {
 }
 
 a:hover {
-	color: #ccc6c6;
+	color: #CDC5BF;
 }
 
 a:active {
@@ -154,32 +156,55 @@ a:active {
 
 .sidebar {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	align-items: center;
-	float: right;
-	width: 15%;
-	margin: 30px 30px;
-	background-color: white;
+	width: 100%;
+	background-color:  rgb(197, 34, 51);
 	justify-content: space-between;
-	color: black;
-	height: 500px;
+	height: 50px;
 }
 
 .sidebar-item {
 	padding-top: 10px;
+	border-right: 1px solid white;
 	text-align: center;
 	width: 100%;
-	height: 35px;
+	height: 40px;
+}
+
+.sidebar-item:hover {
+	background-color:  rgb(150, 34, 51);
+	color: #CDC5BF;
+
 }
 
 .new {
+	display: flex;
+	justify-content: center;	
 	text-align: center;
 	margin-top: 80px;
 	font-size: 24px;
 	height: 96.68vh;
 }
 
+.new-text {
+	width: 60%;
+}
+
+.new-title {
+	display: flex;
+	margin-top: 60px;
+	justify-content: space-around;
+}
+
+.new-title img{
+	width: 600px;
+	height: 300px;
+	box-shadow: 0px 0px 15px black;
+}
+
 footer{ 
+	margin-top: 140px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
@@ -194,8 +219,8 @@ footer{
 .content {
 	display: flex;
 	justify-content: space-between;
-	width: 80%;
-	height: 1600px;
+	width: 100%;
+	height: 1400px;
 }
 
 .flex-1, .flex-2 {
@@ -212,16 +237,18 @@ footer{
 	align-items: center;
 	flex-direction: column;
 	margin-top: 50px;
-	border-radius: 20px;
-	box-shadow: 4px 4px 5px white;
+	box-shadow: 4px 4px 5px black;
 	width: 100%;
 	height: 350px;
 	background-image: url(pic/2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .new-1 {
 	background-image: url(pic/news-1.jpg);
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .continue {
