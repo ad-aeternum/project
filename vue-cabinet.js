@@ -57,6 +57,9 @@ var main = new Vue({
 		},
 		pozh: function () {
 			this.b.push(this.a)
+		},
+		exit: function () {
+			window.location.href= 'index.html'
 		}
 	}
 });
