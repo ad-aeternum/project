@@ -20,7 +20,7 @@ new Vue({
 					if (this.password == this.b) {
 						window.location.href= 'cabinet.html'
 				}else{ alert ("err log or pass not founded") }
-			}
+			}else{ alert ("err log or pass not founded") }
 		}
 	}
 });
