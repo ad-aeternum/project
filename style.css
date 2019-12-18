@@ -5,13 +5,13 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #F0FFF0;
+	background-color: linear-gradient(270deg, #c33764, #1d2671);
 	font-family: 'Comfortaa', cursive;
 	color: black;
 }
 
 header {
-	background-color: white;
+	background-color: #9c0324;;
 	height: 50px;
 	width: 100%;
 	border-bottom: 1px solid black;
@@ -170,6 +170,7 @@ a:active {
 	align-items: center;
 	justify-content: center;
 	padding-top: 10px;
+	background: #9c0324;
 	border: 0.5px solid black;;	 
 	width: 100%;
 	height: 40px;
@@ -219,6 +220,7 @@ footer{
 .content {
 	display: flex;
 	justify-content: space-between;
+	background: linear-gradient(270deg, #c33764, #1d2671);
 	width: 100%;
 	height: 1400px;
 }
